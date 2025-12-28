@@ -160,11 +160,21 @@ if __name__ == '__main__':
             						for general/seq models to select Normal (no suffix, model_mode="") or "Impression" setting;\
                   					for rerankers to select "General" or "Sequential" Baseranker.')
 	init_args, init_extras = init_parser.parse_known_args()
-	
-	model_name = eval('{0}.{0}{1}'.format(init_args.model_name,init_args.model_mode))
-	reader_name = eval('{0}.{0}'.format(model_name.reader))  # model chooses the reader
-	runner_name = eval('{0}.{0}'.format(model_name.runner))  # model chooses the runner
 
+	model_class_str = init_args.model_name + init_args.model_mode
+	model_name = eval(model_class_str)
+
+	# 动态导入 reader 和 runner
+	import importlib
+
+	# 导入 reader
+	reader_module = importlib.import_module(f'helpers.{model_name.reader}')
+	reader_name = getattr(reader_module, model_name.reader)
+
+	# 导入 runner
+	runner_module = importlib.import_module(f'helpers.{model_name.runner}')
+	runner_name = getattr(runner_module, model_name.runner)
+	
 	# Args
 	parser = argparse.ArgumentParser(description='')
 	parser = parse_global_args(parser)

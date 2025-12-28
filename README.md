@@ -1,3 +1,10 @@
+该作业为陈耿翰（23355001）与田雨果（23330118）共同完成的机器学习理论大作业，复现的论文为《Adaptive Hardness Negative Sampling for Collaborative Filtering》，即一个更合理的负采样算法。
+代码运行方式为：运行ReChorus文件夹中的run.py文件，该文件会自动运行八个实验的命令并且最终输出数据到csv文件。
+数据处理文件为plt.py，运行后会输出处理过后的图片或图表到ReChorus文件夹下。
+结果文件和处理过后的文件被我们存储在result文件夹中，AHNS.py文件的路径为.\ReChorus\src\models\general\AHNS.py。
+运行的log文件存储在log文件夹中。
+以下为原论文的README文件：
+
 ![logo](./docs/_static/logo2.0.png)
 ---
 

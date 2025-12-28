@@ -1,0 +1,162 @@
+[
+  {
+    "model": "BPRMF",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "",
+    "time": 4.514610290527344,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/BPRMF_Grocery_and_Gourmet_Food_20251226_210924.log",
+    "timestamp": "20251226_210924"
+  },
+  {
+    "model": "LightGCN",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "--n_layers 3",
+    "time": 11.1714448928833,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/LightGCN_Grocery_and_Gourmet_Food_20251226_210929.log",
+    "timestamp": "20251226_210929"
+  },
+  {
+    "model": "AHNS",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32",
+    "time": 4.373021841049194,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/AHNS_Grocery_and_Gourmet_Food_20251226_210940.log",
+    "timestamp": "20251226_210940"
+  },
+  {
+    "model": "AHNS",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32 --hardness_weight 1 --hardness_temp 0.1",
+    "time": 4.54684591293335,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/AHNS_Grocery_and_Gourmet_Food_20251226_210944.log",
+    "timestamp": "20251226_210944"
+  },
+  {
+    "model": "BPRMF",
+    "dataset": "ml-1m",
+    "args": "",
+    "time": 3.1860408782958984,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/BPRMF_ml-1m_20251226_210949.log",
+    "timestamp": "20251226_210949"
+  },
+  {
+    "model": "LightGCN",
+    "dataset": "ml-1m",
+    "args": "--n_layers 3",
+    "time": 11.012047529220581,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/LightGCN_ml-1m_20251226_210952.log",
+    "timestamp": "20251226_210952"
+  },
+  {
+    "model": "AHNS",
+    "dataset": "ml-1m",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32",
+    "time": 3.04845929145813,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/AHNS_ml-1m_20251226_211003.log",
+    "timestamp": "20251226_211003"
+  },
+  {
+    "model": "AHNS",
+    "dataset": "ml-1m",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32 --hardness_weight 1 --hardness_temp 0.1",
+    "time": 3.1485700607299805,
+    "status": "error",
+    "error": "命令返回非零状态码: 1",
+    "log_file": "experiment_logs/AHNS_ml-1m_20251226_211006.log",
+    "timestamp": "20251226_211006"
+  },
+  {
+    "model": "BPRMF",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "",
+    "time": 261.36135029792786,
+    "status": "success",
+    "log_file": "experiment_logs/BPRMF_Grocery_and_Gourmet_Food_20251226_213201.log",
+    "timestamp": "20251226_213201",
+    "NDCG@5": 0.0211
+  },
+  {
+    "model": "LightGCN",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "--n_layers 3",
+    "time": 345.2336120605469,
+    "status": "success",
+    "log_file": "experiment_logs/LightGCN_Grocery_and_Gourmet_Food_20251226_213622.log",
+    "timestamp": "20251226_213622",
+    "NDCG@5": 0.0204
+  },
+  {
+    "model": "AHNS",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32",
+    "time": 224.00440859794617,
+    "status": "success",
+    "log_file": "experiment_logs/AHNS_Grocery_and_Gourmet_Food_20251226_214207.log",
+    "timestamp": "20251226_214207",
+    "NDCG@5": 0.003
+  },
+  {
+    "model": "AHNS",
+    "dataset": "Grocery_and_Gourmet_Food",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32 --hardness_weight 1 --hardness_temp 0.1",
+    "time": 221.08137273788452,
+    "status": "success",
+    "log_file": "experiment_logs/AHNS_Grocery_and_Gourmet_Food_20251226_214551.log",
+    "timestamp": "20251226_214551",
+    "NDCG@5": 0.003
+  },
+  {
+    "model": "BPRMF",
+    "dataset": "ml-1m",
+    "args": "",
+    "time": 257.10253620147705,
+    "status": "success",
+    "log_file": "experiment_logs/BPRMF_ml-1m_20251226_214933.log",
+    "timestamp": "20251226_214933",
+    "NDCG@5": 0.0342
+  },
+  {
+    "model": "LightGCN",
+    "dataset": "ml-1m",
+    "args": "--n_layers 3",
+    "time": 504.6207013130188,
+    "status": "success",
+    "log_file": "experiment_logs/LightGCN_ml-1m_20251226_215350.log",
+    "timestamp": "20251226_215350",
+    "NDCG@5": 0.0323
+  },
+  {
+    "model": "AHNS",
+    "dataset": "ml-1m",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32",
+    "time": 682.547545671463,
+    "status": "success",
+    "log_file": "experiment_logs/AHNS_ml-1m_20251226_220214.log",
+    "timestamp": "20251226_220214",
+    "NDCG@5": 0.0126
+  },
+  {
+    "model": "AHNS",
+    "dataset": "ml-1m",
+    "args": "--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32 --hardness_weight 1 --hardness_temp 0.1",
+    "time": 683.9855818748474,
+    "status": "success",
+    "log_file": "experiment_logs/AHNS_ml-1m_20251226_221337.log",
+    "timestamp": "20251226_221337",
+    "NDCG@5": 0.0126
+  }
+]

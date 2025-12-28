@@ -1,0 +1,9 @@
+Exp_ID,Model,Dataset,Parameters,Training_Time(s),Training_Loss,Val_NDCG@5,Test_NDCG@20,Status,Relative_to_BPRMF
+1,BPRMF,ml-1m,--batch_size 2048 --epoch 30 --num_neg 1,160.7,0.1436,0.2693,0.3672,success,+0.00%
+2,LightGCN,ml-1m,--n_layers 3 --batch_size 2048 --epoch 30 --num_ne...,292.0,0.2164,0.2605,0.3521,success,-4.11%
+3,AHNS,ml-1m,--alpha 0.5 --beta 1.0 --p -2.0 --candidate_M 32 -...,3882.3,0.1357,0.2712,0.3676,success,+0.11%
+4,AHNS,ml-1m,--alpha 1.0 --beta 0.8 --p -1.0 --candidate_M 16 -...,1565.4,0.1243,0.2747,0.3641,success,-0.84%
+5,BPRMF,Grocery_and_Gourmet_Food,--batch_size 1024 --epoch 60 --num_neg 4,66.1,0.2094,0.3336,0.3265,success,+0.00%
+6,LightGCN,Grocery_and_Gourmet_Food,--n_layers 2 --batch_size 1024 --epoch 60 --num_ne...,87.3,0.3923,0.3156,0.3311,success,+1.41%
+7,AHNS,Grocery_and_Gourmet_Food,--alpha 0.3 --beta 0.5 --p -1.5 --candidate_M 16 -...,175.3,0.1903,0.3205,0.3267,success,+0.06%
+8,AHNS,Grocery_and_Gourmet_Food,--alpha 0.2 --beta 0.3 --p -1.0 --candidate_M 8 --...,101.3,0.1905,0.3176,0.3254,success,-0.34%
